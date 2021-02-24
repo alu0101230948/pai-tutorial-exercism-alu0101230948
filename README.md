@@ -12,7 +12,7 @@ Una solución bastante sencilla es establecer un enlace simbólico con el direct
 ``` bash
 $ ln -s ~/snap/exercism/5/exercism/javascript/ exercism
 ```
-Esto creará un enlace simbólico con el nombre `exercism`, así podemos acceder al directorio con los ejercicios de JavaScript con el siguiente comando:
+Esto creará un enlace simbólico con el nombre `exercism`, así podemos acceder al directorio con los ejercicios de JavaScript escribiendo el siguiente comando:
 ``` bash
 $ cd exercism
 ```
@@ -60,4 +60,9 @@ $ tree
 Nota: el comando tree es solo una manera visual de ver el árbol de directorios partiendo del directorio actual. Si quiere instalarlo, ejecute:
 ``` bash
 $ sudo apt-get install tree
+```
+
+Una vez terminamos y todo funciona correctamente, podemos trabajar con los ejercicios y los cambios quedarán reflejados en el directorio de la práctica. Recuerde que al finalizar el ejercicio y comprobar que los tests funcionan correctamente, es recomendable eliminar el directorio `node_modules`:
+``` bash
+~/practicas/pai-practica03-simpleprograms-alu0101230948/javascript/armstrong-numbers$ rm -rf node_modules
 ```
